@@ -6,8 +6,10 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\PermissionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,29 +26,43 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::middleware(['auth', 'role:admin'])->group(function () {
 
-Route::get('/dashboard',[DashboardController::class,'show'])->name('dash');
+    Route::get('category', [CategoryController::class, 'index'])->name('get.category');
+    Route::get('category/create', [CategoryController::class, 'create'])->name('create.category');
+    Route::post('category', [CategoryController::class, 'store'])->name('category');
+    Route::get('category/{category}', [CategoryController::class, 'show'])->name('show.category');
+    Route::get('category/{category}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
+    Route::put('category/{category}', [CategoryController::class, 'update'])->name('update.category');
+    Route::delete('category/{category}', [CategoryController::class, 'destroy'])->name('categories.destroy');
 
-/* Auth*/
+    Route::get('/dashboard',[DashboardController::class,'index'])->name('dash');
+});
+
+Route::post('logout', [LogoutController::class, 'destroy'])
+    ->middleware('auth');
 Route::get("register", [RegisterController::class, 'create'])->name('Form-register');
 
 Route::post("register", [RegisterController::class, 'store'])->name('register');
 
-Route::post('logout', [LogoutController::class, 'destroy']);
-
 Route::get("login", [LoginController::class, 'create'])->name('Form-login');
 
 Route::post("login", [LoginController::class, 'authenticate'])->name('login');
+Route::middleware('guest')->group(function () {
 
 
-Route::get('/request', [ForgotPasswordLinkController::class, 'create']);
+    Route::get('/request', [ForgotPasswordLinkController::class, 'create']);
 
-Route::post('/request', [ForgotPasswordLinkController::class, 'store']);
+    Route::post('/request', [ForgotPasswordLinkController::class, 'store']);
 
-Route::get('password/reset/{token}', [ForgotPasswordController::class, 'create'])->name('password.reset');
+    Route::get('password/reset/{token}', [ForgotPasswordController::class, 'create'])->name('password.reset');
 
-Route::post('/reset', [ForgotPasswordController::class, 'reset'])->name('reset');
+    Route::post('/reset', [ForgotPasswordController::class, 'reset'])->name('reset');
+});
 
-Route::get("category", [CategoryController::class, 'index'])->name('get.category');
 
+
+Route::get("client", [ClientController::class, 'index']);
 Route::get("Event", [EventController::class, 'index'])->name('get.event');
+
+Route::post('/ask_permission/{user}', [PermissionController::class, 'ask'])->name('ask_permission');
