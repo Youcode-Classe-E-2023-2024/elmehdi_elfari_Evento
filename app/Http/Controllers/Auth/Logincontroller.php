@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 
 class LoginController extends Controller
@@ -23,8 +25,15 @@ class LoginController extends Controller
 
         if (auth()->attempt($formFields, $request->filled('remember'))) {
             $request->session()->regenerate();
+            $user=User::where('id',Auth::id())->first();
 
-            return redirect()->route('login')->with("login", 'true');
+            if($user->HasRole('admin')){
+                return redirect('dashboard')->with("login", 'true');
+
+            }else{
+                return redirect('client')->with("login", 'true');
+            }
+
         }
         return back()->withErrors(['email' => 'Invalid Credentials'])
             ->onlyInput();
