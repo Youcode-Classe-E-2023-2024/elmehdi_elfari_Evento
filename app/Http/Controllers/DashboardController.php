@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function show(){
-
-        return view('Dashboard.dashboard');
+    public function index()
+    {
+        $categoriesCount = Category::count();
+        return view('Dashboard.dashboard', compact('categoriesCount'));
     }
+
 }
