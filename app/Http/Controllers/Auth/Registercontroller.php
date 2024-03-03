@@ -36,8 +36,16 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password)
         ]);
+        $user->assignRole('client');
         Auth::login($user);
 
-        return redirect('register');
+        if($user->HasRole('client')){
+
+        }else{
+            return redirect('dashboard')->with("login", 'true');
+
+        }
+
+      /*return redirect('register');*/
     }
 }
