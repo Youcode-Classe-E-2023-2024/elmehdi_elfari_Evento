@@ -1562,7 +1562,7 @@
     </div>
     <!-- end navbar -->
 
-    <div class="max-w-3xl mt-48 mx-auto bg-white p-6 rounded-lg shadow-md" x-data="categoryModal()">
+    <div class="max-w-3xl mt-8 mx-auto bg-white p-6 rounded-lg shadow-md" x-data="categoryModal()">
         <h1 class="text-2xl font-semibold mb-4">Category List</h1>
 
         <!-- Table starts here -->
@@ -1576,24 +1576,21 @@
             </thead>
             <tbody>
             <!-- Sample Data -->
-            <tr>
-                <td class="border-b p-2">1</td>
-                <td class="border-b p-2">Category 1</td>
-                <td class="border-b p-2">
-                    <!-- Add action buttons here -->
-                    <button class="text-blue-500 hover:underline">Edit</button>
-                    <button class="text-red-500 hover:underline">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td class="border-b p-2">2</td>
-                <td class="border-b p-2">Category 2</td>
-                <td class="border-b p-2">
-                    <!-- Add action buttons here -->
-                    <button class="text-blue-500 hover:underline">Edit</button>
-                    <button class="text-red-500 hover:underline">Delete</button>
-                </td>
-            </tr>
+            @foreach($categories as $category)
+                <tr>
+                    <td class="border-b p-2">{{ $category->id }}</td>
+                    <td class="border-b p-2">{{ $category->name }}</td>
+                    <td class="border-b p-2">
+                        <!-- Add action buttons here -->
+                        <a href="{{ route('categories.edit', $category) }}" class="text-blue-500 hover:underline">Edit</a>
+                        <form action="{{ route('categories.destroy', $category) }}" method="POST" class="inline-block">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="text-red-500 hover:underline">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
             <!-- End Sample Data -->
             </tbody>
         </table>
@@ -1612,9 +1609,10 @@
                     <h2 class="text-2xl font-semibold mb-4">Add Category</h2>
 
                     <!-- Add your form elements for adding a category here -->
-                    <form>
+                    <form action="{{ route('category') }}" method="POST">
+                        @csrf <!-- Add CSRF token for security -->
                         <label class="block mb-2">Category Name:</label>
-                        <input type="text" class="w-full border p-2 mb-4" placeholder="Enter category name" required>
+                        <input type="text" name="name" class="w-full border p-2 mb-4" placeholder="Enter category name" required>
 
                         <button type="submit" class="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Save</button>
                     </form>
