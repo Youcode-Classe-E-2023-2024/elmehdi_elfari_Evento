@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Carousel</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-...", crossorigin="anonymous" />
 </head>
 
 <body>
@@ -15,15 +17,19 @@
     <div class="container">
         <div class="font-[sans-serif] space-x-4 space-y-4 text-center">
             <a href="{{ route('clients') }}" type="button"
-                class="px-6 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-[#333] hover:bg-[#222] active:bg-[#333]">Dark</a>
+                class="w-36 mx-auto flex items-center px-6 bg-blue-800 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-[#333] hover:bg-[#222] active:bg-[#333]">
+                <i class="fas fa-arrow-left mr-2"></i> Retour
+            </a>
         </div>
+
 
         <div
             class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-full max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
-            <img src="{{ $Event->image }}" class="w-full rounded-lg" />
+            <img src="{{ asset('storage/' . $Event->image . '.jpg') }}" class="w-full rounded-lg" />
             <div class="px-4 my-6 text-center">
                 <h3 class="text-lg font-semibold">{{ $Event->title }}</h3>
-                <p class="mt-2 text-sm text-gray-400">{{ $Event->description }}</p>
+                <p class="mt-2 text-sm text-gray-400">{{ $Event->date_start }}</p>
+                <p class="mt-2 hidden text-sm text-gray-400">{{ $Event->description }}</p>
                 <button type="button" id="viewButton"
                     class="px-6 py-2 w-full mt-4 rounded-lg text-white text-sm tracking-wider font-semibold border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">View</button>
             </div>

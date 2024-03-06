@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -48,9 +49,12 @@ class EventController extends Controller
         ]);
 
         $imagePath = null;
+        $imageExt = null;
+        $imageName = Str::random(20);
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->storeAs('EventsImg', 'public');
+            $imageExt = $request->file('image')->extension();
+            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName . '.' . $imageExt);
         }
 
         $categoriesId = (int)$validated['categories_id'];
