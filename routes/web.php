@@ -12,6 +12,7 @@ use App\Http\Controllers\DashController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
@@ -87,7 +88,9 @@ Route::put('/events/{event}', [EventController::class, 'update'])->name('Events.
 
 Route::delete('/events/{Event}', [EventController::class, 'destroy'])->name('Events.destroy');
 
+Route::post('/events/{eventId}/reserve', [EventController::class, 'reserve'])->name('events.reserve');
 
 Route::middleware(['auth'])->group(function () {
     Route::post('/ask_permission', [PermissionController::class, 'ask'])->name('asckPermission');
 });
+Route::get('/events/{event}/detail', [EventController::class,'detail'])->name('events.detail');
