@@ -45,16 +45,19 @@ class EventController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'number_places' => 'required|numeric',
             'categories_id' => 'required|integer|exists:categories,id',
-            'status' => 'required|in:manuel,auto',
+            'status' => 'required|in:manual,auto',
         ]);
 
         $imagePath = null;
-        $imageExt = null;
-        $imageName = Str::random(20);
 
         if ($request->hasFile('image')) {
             $imageExt = $request->file('image')->extension();
-            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName . '.' . $imageExt);
+            $originalName = $request->file('image')->getClientOriginalName();
+
+            // Use the original name with a timestamp to avoid overwriting
+            $imageName = pathinfo($originalName, PATHINFO_FILENAME) . '_' . time() . '.' . $imageExt;
+            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName, 'public');
+
         }
 
         $categoriesId = (int)$validated['categories_id'];
@@ -75,6 +78,7 @@ class EventController extends Controller
 
         return redirect()->back()->with('success', 'Event added successfully!!');
     }
+
 
 
 
@@ -140,11 +144,11 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    /*public function destroy(Event $Event)
+    public function destroy(Event $Event)
     {
         $Event->delete();
         return redirect()->back()->with('success', 'Event deleted successfuly !!');
-    }*/
+    }
 
 
     public function search()
