@@ -45,19 +45,16 @@ class EventController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'number_places' => 'required|numeric',
             'categories_id' => 'required|integer|exists:categories,id',
-            'status' => 'required|in:manual,auto',
+            'status' => 'required|in:manuel,auto',
         ]);
 
         $imagePath = null;
+        $imageExt = null;
+        $imageName = Str::random(20);
 
         if ($request->hasFile('image')) {
             $imageExt = $request->file('image')->extension();
-            $originalName = $request->file('image')->getClientOriginalName();
-
-            // Use the original name with a timestamp to avoid overwriting
-            $imageName = pathinfo($originalName, PATHINFO_FILENAME) . '_' . time() . '.' . $imageExt;
-            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName, 'public');
-
+            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName . '.' . $imageExt);
         }
 
         $categoriesId = (int)$validated['categories_id'];
@@ -78,7 +75,6 @@ class EventController extends Controller
 
         return redirect()->back()->with('success', 'Event added successfully!!');
     }
-
 
 
 
@@ -168,5 +164,30 @@ class EventController extends Controller
         $event->delete();
 
         return redirect()->back()->with('success', 'Event soft deleted successfully!');
+    }
+
+
+    public function detail($eventId)
+    {
+        $event = Event::find($eventId);
+
+        if (!$event) {
+            abort(404);
+        }
+
+        return view('detail', ['event' => $event]);
+    }
+
+    public function reserve($eventId)
+    {
+        $event = Event::find($eventId);
+
+        if (!$event) {
+            abort(404);
+        }
+
+        $event->update(['available_places' => $event->available_places - 1]);
+
+        return response()->json(['message' => 'Place reserved successfully']);
     }
 }
