@@ -19,5 +19,8 @@ class Event extends Model
         'categories_id',
         'status',
         'users_id',
+        'available_places',
     ];
+
+
 }
