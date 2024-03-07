@@ -13,13 +13,19 @@
     <title>Document</title>
 </head>
 
-<body class="container mx-auto px-2 my-20">
+<body class="mx-auto my-20">
+    <div class="font-[sans-serif] pb-5 mx-auto space-x-4 space-y-4 ">
+        <a href="{{ url('/') }}" type="button"
+           class="w-36 text-center flex items-center px-6 bg-blue-800 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-[#333] hover:bg-[#222] active:bg-[#333]">
+            <i class="fas fa-arrow-left mr-2"></i> Retour
+        </a>
+    </div>
 
-    <div class="flex flex-wrap justify-between">
+    <div class="flex flex-wrap px-1 justify-between">
         @isset($validatedEvents)
             @foreach ($validatedEvents as $event)
                 <div
-                    class="w-1/3 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 mb-6">
+                    class="w-full px-2 py-2 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700 mb-6">
                     <a href="#">
                         <img class="w-full h-96 object-cover rounded-t-lg" src="{{ asset('storage/' . $event->image) }}"
                             alt="{{ $event->title }}">
