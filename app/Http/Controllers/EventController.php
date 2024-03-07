@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\Category;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -48,9 +49,12 @@ class EventController extends Controller
         ]);
 
         $imagePath = null;
+        $imageExt = null;
+        $imageName = Str::random(20);
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->storeAs('EventsImg', 'public');
+            $imageExt = $request->file('image')->extension();
+            $imagePath = $request->file('image')->storeAs('EventsImg', $imageName . '.' . $imageExt);
         }
 
         $categoriesId = (int)$validated['categories_id'];
@@ -116,6 +120,8 @@ class EventController extends Controller
         } else {
             $validated['image'] = $request->input('image');
         }
+        $usersId = Auth::id();
+
         $Event->update([
             'title' => $validated['title'],
             'description' => $validated['description'],
@@ -126,7 +132,7 @@ class EventController extends Controller
             'number_places' => $validated['number_places'],
             'categories_id' => $validated['categories_id'],
             'status' => $validated['status'],
-            'users_id' => Auth::id(),
+            'users_id' => $usersId,
         ]);
         return redirect()->back()->with('success', 'Event updated successfuly !!');
     }
@@ -134,9 +140,29 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Event $Event)
+    /*public function destroy(Event $Event)
     {
         $Event->delete();
         return redirect()->back()->with('success', 'Event deleted successfuly !!');
+    }*/
+
+
+    public function search()
+    {
+        $search = $_GET['query'];
+        //dd($search); clean
+
+        $validatedEvents = Event::where('title', 'LIKE', '%' . $search . '%')->get();
+        //dd($validatedEvents);
+        return view('Dashboard.search', compact('validatedEvents'));
+    }
+
+    public function softDeleteEvent($id)
+    {
+        $event = Event::findOrFail($id);
+
+        $event->delete();
+
+        return redirect()->back()->with('success', 'Event soft deleted successfully!');
     }
 }

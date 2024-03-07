@@ -8,8 +8,11 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,9 +26,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [HomeController::class, 'welcome']);
+
 Route::middleware(['auth', 'role:admin'])->group(function () {
 
     Route::get('category', [CategoryController::class, 'index'])->name('get.category');
@@ -36,8 +39,11 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::put('category/{category}', [CategoryController::class, 'update'])->name('update.category');
     Route::delete('category/{category}', [CategoryController::class, 'destroy'])->name('categories.destroy');
 
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dash');
+    Route::get('/dashboard', [DashController::class, 'index'])->name('dash');
+    Route::get('/validate-events', [DashboardController::class, 'showValidationPage'])->name('validate.events');
+    Route::post('/validate-event/{id}', [DashboardController::class, 'validateEvent'])->name('validate.event');
 });
+Route::get('/search', [EventController::class, 'search'])->name('search');
 
 Route::post('logout', [LogoutController::class, 'destroy'])
     ->middleware('auth');
@@ -67,6 +73,7 @@ Route::middleware(['auth', 'role:client'])->group(function () {
 Route::middleware(['auth', 'role:organisateur'])->group(function () {
     Route::get("clients", [EventController::class, 'index'])->name('clients');
 });
+Route::delete('/soft-delete/event/{id}', [EventController::class, 'softDeleteEvent'])->name('soft-delete.event');
 
 Route::get('/events/create', [EventController::class, 'create'])->name('get.event');
 

@@ -19,7 +19,7 @@
         <ul class="mt-4">
             <span class="text-gray-400 font-bold">ADMIN</span>
             <li class="mb-1 group">
-                <a href=""
+                <a href="{{ route('dash') }}"
                     class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="ri-home-2-line mr-3 text-lg"></i>
                     <span class="text-sm">Dashboard</span>
@@ -44,12 +44,13 @@
                 </ul>
             </li>
             @role('admin')
-                {{-- <li class="mb-1 group">
-            <a href="{{ route('get.event') }}" class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
-                <i class='bx bx-list-ul mr-3 text-lg'></i>
-                <span class="text-sm">Event</span>
-            </a>
-        </li> --}}
+                <li class="mb-1 group">
+                    <a href="{{ route('validate.events') }}"
+                        class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                        <i class='bx bx-list-ul mr-3 text-lg'></i>
+                        <span class="text-sm">Validate</span>
+                    </a>
+                </li>
                 <li class="mb-1 group">
                     <a href="{{ route('get.category') }}"
                         class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">

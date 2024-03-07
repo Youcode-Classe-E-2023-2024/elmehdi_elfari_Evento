@@ -10,6 +10,12 @@
 </head>
 
 <body class="mt-5 flex flex-col justify-center max-w-lg mx-auto px-4 space-y-6 font-[sans-serif] text-[#333]">
+    <div class="font-[sans-serif] space-x-4 space-y-4 text-center">
+        <a href="{{ route('clients') }}" type="button"
+           class="w-36 text-center flex items-center px-6 bg-blue-800 py-2.5 rounded-full text-white text-sm tracking-wider font-semibold border-none outline-none bg-[#333] hover:bg-[#222] active:bg-[#333]">
+            <i class="fas fa-arrow-left mr-2"></i> Retour
+        </a>
+    </div>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>

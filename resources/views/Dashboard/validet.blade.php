@@ -1,4 +1,3 @@
-<!-- component -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1370,64 +1369,78 @@
         <!-- end navbar -->
 
         <!-- Content -->
-        <div class="p-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-                    <div class="flex justify-between mb-6">
-                        <div>
-                            <div class="flex items-center mb-1">
-                                <div class="text-2xl font-semibold">{{ $categoriesCount }}</div>
-                            </div>
-                            <div class="text-sm font-medium text-gray-400">Category</div>
-                        </div>
-                    </div>
+        <!-- Alert Section -->
+        <div class="bg-green-100 hidden text-green-800 pl-4 pr-10 py-4 rounded relative mb-4" role="alert">
+            @if (session('success'))
+                <div class="inline-block max-sm:mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-yellow-500 inline mr-4" viewBox="0 0 128 128">
+                    </svg>
+                    <strong class="font-bold text-base">{{ session('success') }}</strong>
                 </div>
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-                    <div class="flex justify-between mb-4">
-                        <div>
-                            <div class="flex items-center mb-1">
-                                <div class="text-2xl font-semibold">{{ $validatedEventCount }}</div>
-                            </div>
-                            <div class="text-sm font-medium text-gray-400">
-                                <h4>Event Valid</h4>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
-                    <div class="flex justify-between mb-6">
-                        <div>
-                            <div class="text-2xl font-semibold mb-1">{{ $invalidEventCount }}</div>
-                            <div class="text-sm font-medium text-gray-400">Event Invalid</div>
-                        </div>
-                        <div class="dropdown">
-                            <ul
-                                class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                                <li>
-                                    <a href="#"
-                                        class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-blue-500 hover:bg-gray-50">Logout</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endif
         </div>
+        <div class="bg-red-100 hidden text-red-800 pl-4 pr-10 py-4 rounded relative mb-4" role="alert">
+        @if (session('error'))
+                <div class="inline-block max-sm:mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 fill-red-500 inline mr-4" viewBox="0 0 32 32">
+                    </svg>
+                    <strong class="font-bold text-base">{{ session('error') }}</strong>
+                </div>
+            @endif
+        </div>
+
+        <div class="p-6">
+            <table class="min-w-full bg-white border border-gray-300 rounded-md overflow-hidden">
+                <thead class="bg-gray-100">
+                <tr>
+                    <th class="py-2 px-4 border-b">Title</th>
+                    <th class="py-2 px-4 border-b">Description</th>
+                    <th class="py-2 px-4 border-b">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach ($events as $event)
+                    <tr>
+                        <td class="py-2 px-4 border-b">{{ $event->title }}</td>
+                        <td class="py-2 px-4 border-b">{{ $event->description }}</td>
+                        <td class="py-2 px-4 border-b">
+                            <div class="flex justify-center ">
+                                <form action="{{ route('validate.event', ['id' => $event->id]) }}" method="post">
+                                    @csrf
+                                    @method('POST')
+                                    <button type="submit"
+                                            class=" bg-{{ $event->validated ? 'green' : 'red' }}-500 text-white px-3 py-1 rounded-md hover:bg-{{ $event->validated ? 'green' : 'red' }}-600 focus:outline-none focus:border-{{ $event->validated ? 'green' : 'red' }}-700 focus:ring focus:ring-{{ $event->validated ? 'green' : 'red' }}-200">
+                                        {{ $event->validated ? 'Valid' : 'Invalid' }}
+                                    </button>
+                                </form>
+
+                                <form action="{{ route('soft-delete.event', ['id' => $event->id]) }}" method="post"
+                                      class="inline-block">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit"
+                                            class="ml-4 px-4 py-1.5 rounded text-white text-sm tracking-wider font-semibold border-none outline-none bg-orange-600 hover:bg-orange-700 active:bg-orange-600">
+                                        Soft Delete
+                                    </button>
+                                </form>
+                            </div>
+
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+        </div>
+
         <!-- End Content -->
 
     </main>
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    </script>
 
     <script>
         // start: Sidebar

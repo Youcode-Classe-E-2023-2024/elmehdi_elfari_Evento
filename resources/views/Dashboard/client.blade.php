@@ -119,7 +119,9 @@
 
             <div class="overflow-x-auto">
                 <div class="font-[sans-serif] space-x-4  my-3 space-y-4 text-center">
-                    <a href="{{ route('get.event') }}" class="bg-blue-500 p-2 text-white">Add Event</a>
+                    <a href="{{ route('get.event') }}"
+                        class="px-6 py-2 rounded text-white text-sm tracking-wider font-medium outline-none border-2 border-blue-600 bg-blue-600 hover:bg-transparent hover:text-black transition-all duration-300">Add
+                        Event</a>
                 </div>
                 <table class="min-w-full bg-white font-sans">
                     <thead class="bg-gray-100 whitespace-nowrap">
@@ -146,14 +148,15 @@
                                 <td>{{ $event->status }}</td>
                                 <td>
                                     <a href="{{ route('Events.show', $event->id) }}"
-                                        class="bg-blue-500 text-white p-2">View</a>
+                                        class="px-6 py-2 rounded-full text-black text-sm tracking-wider font-medium outline-none border-2 border-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">View</a>
                                     <a href="{{ route('Events.edit', $event->id) }}"
-                                        class="bg-yellow-500 text-white p-2">Edit</a>
+                                        class="px-6 py-2 rounded-full text-black text-sm tracking-wider font-medium outline-none border-2 border-orange-500 hover:bg-orange-600 hover:text-white transition-all duration-300">Edit</a>
                                     <form action="{{ route('Events.destroy', $event->id) }}" method="post"
                                         style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="bg-red-500 text-white p-2"
+                                        <button type="submit"
+                                            class="px-6 py-2 rounded-full text-black text-sm tracking-wider font-medium outline-none border-2 border-red-600 hover:bg-red-600 hover:text-white transition-all duration-300"
                                             onclick="return confirm('Are you sure?')">Delete</button>
                                     </form>
                                 </td>

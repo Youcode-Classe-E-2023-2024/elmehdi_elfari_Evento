@@ -1,6 +1,7 @@
 <!-- component -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -385,7 +386,8 @@
         2. Set the default placeholder color to the user's configured gray 400 color.
         */
 
-        input::-moz-placeholder, textarea::-moz-placeholder {
+        input::-moz-placeholder,
+        textarea::-moz-placeholder {
             opacity: 1;
             /* 1 */
             color: #9ca3af;
@@ -453,7 +455,9 @@
             display: none;
         }
 
-        *, ::before, ::after{
+        *,
+        ::before,
+        ::after {
             --tw-border-spacing-x: 0;
             --tw-border-spacing-y: 0;
             --tw-translate-x: 0;
@@ -463,19 +467,19 @@
             --tw-skew-y: 0;
             --tw-scale-x: 1;
             --tw-scale-y: 1;
-            --tw-pan-x:  ;
-            --tw-pan-y:  ;
-            --tw-pinch-zoom:  ;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
             --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position:  ;
-            --tw-gradient-via-position:  ;
-            --tw-gradient-to-position:  ;
-            --tw-ordinal:  ;
-            --tw-slashed-zero:  ;
-            --tw-numeric-figure:  ;
-            --tw-numeric-spacing:  ;
-            --tw-numeric-fraction:  ;
-            --tw-ring-inset:  ;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
             --tw-ring-offset-width: 0px;
             --tw-ring-offset-color: #fff;
             --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -483,27 +487,27 @@
             --tw-ring-shadow: 0 0 #0000;
             --tw-shadow: 0 0 #0000;
             --tw-shadow-colored: 0 0 #0000;
-            --tw-blur:  ;
-            --tw-brightness:  ;
-            --tw-contrast:  ;
-            --tw-grayscale:  ;
-            --tw-hue-rotate:  ;
-            --tw-invert:  ;
-            --tw-saturate:  ;
-            --tw-sepia:  ;
-            --tw-drop-shadow:  ;
-            --tw-backdrop-blur:  ;
-            --tw-backdrop-brightness:  ;
-            --tw-backdrop-contrast:  ;
-            --tw-backdrop-grayscale:  ;
-            --tw-backdrop-hue-rotate:  ;
-            --tw-backdrop-invert:  ;
-            --tw-backdrop-opacity:  ;
-            --tw-backdrop-saturate:  ;
-            --tw-backdrop-sepia:  ;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
         }
 
-        ::backdrop{
+        ::backdrop {
             --tw-border-spacing-x: 0;
             --tw-border-spacing-y: 0;
             --tw-translate-x: 0;
@@ -513,19 +517,19 @@
             --tw-skew-y: 0;
             --tw-scale-x: 1;
             --tw-scale-y: 1;
-            --tw-pan-x:  ;
-            --tw-pan-y:  ;
-            --tw-pinch-zoom:  ;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
             --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position:  ;
-            --tw-gradient-via-position:  ;
-            --tw-gradient-to-position:  ;
-            --tw-ordinal:  ;
-            --tw-slashed-zero:  ;
-            --tw-numeric-figure:  ;
-            --tw-numeric-spacing:  ;
-            --tw-numeric-fraction:  ;
-            --tw-ring-inset:  ;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
             --tw-ring-offset-width: 0px;
             --tw-ring-offset-color: #fff;
             --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -533,1281 +537,1342 @@
             --tw-ring-shadow: 0 0 #0000;
             --tw-shadow: 0 0 #0000;
             --tw-shadow-colored: 0 0 #0000;
-            --tw-blur:  ;
-            --tw-brightness:  ;
-            --tw-contrast:  ;
-            --tw-grayscale:  ;
-            --tw-hue-rotate:  ;
-            --tw-invert:  ;
-            --tw-saturate:  ;
-            --tw-sepia:  ;
-            --tw-drop-shadow:  ;
-            --tw-backdrop-blur:  ;
-            --tw-backdrop-brightness:  ;
-            --tw-backdrop-contrast:  ;
-            --tw-backdrop-grayscale:  ;
-            --tw-backdrop-hue-rotate:  ;
-            --tw-backdrop-invert:  ;
-            --tw-backdrop-opacity:  ;
-            --tw-backdrop-saturate:  ;
-            --tw-backdrop-sepia:  ;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
         }
 
-        .fixed{
+        .fixed {
             position: fixed;
         }
 
-        .absolute{
+        .absolute {
             position: absolute;
         }
 
-        .relative{
+        .relative {
             position: relative;
         }
 
-        .sticky{
+        .sticky {
             position: sticky;
         }
 
-        .left-0{
+        .left-0 {
             left: 0px;
         }
 
-        .left-4{
+        .left-4 {
             left: 1rem;
         }
 
-        .top-0{
+        .top-0 {
             top: 0px;
         }
 
-        .top-1\/2{
+        .top-1\/2 {
             top: 50%;
         }
 
-        .z-30{
+        .z-30 {
             z-index: 30;
         }
 
-        .z-40{
+        .z-40 {
             z-index: 40;
         }
 
-        .z-50{
+        .z-50 {
             z-index: 50;
         }
 
-        .my-2{
+        .my-2 {
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
         }
 
-        .-ml-3{
+        .-ml-3 {
             margin-left: -0.75rem;
         }
 
-        .mb-0{
+        .mb-0 {
             margin-bottom: 0px;
         }
 
-        .mb-0\.5{
+        .mb-0\.5 {
             margin-bottom: 0.125rem;
         }
 
-        .mb-1{
+        .mb-1 {
             margin-bottom: 0.25rem;
         }
 
-        .mb-2{
+        .mb-2 {
             margin-bottom: 0.5rem;
         }
 
-        .mb-4{
+        .mb-4 {
             margin-bottom: 1rem;
         }
 
-        .mb-6{
+        .mb-6 {
             margin-bottom: 1.5rem;
         }
 
-        .ml-1{
+        .ml-1 {
             margin-left: 0.25rem;
         }
 
-        .ml-2{
+        .ml-2 {
             margin-left: 0.5rem;
         }
 
-        .ml-3{
+        .ml-3 {
             margin-left: 0.75rem;
         }
 
-        .ml-4{
+        .ml-4 {
             margin-left: 1rem;
         }
 
-        .ml-auto{
+        .ml-auto {
             margin-left: auto;
         }
 
-        .mr-1{
+        .mr-1 {
             margin-right: 0.25rem;
         }
 
-        .mr-2{
+        .mr-2 {
             margin-right: 0.5rem;
         }
 
-        .mr-3{
+        .mr-3 {
             margin-right: 0.75rem;
         }
 
-        .mr-4{
+        .mr-4 {
             margin-right: 1rem;
         }
 
-        .mt-2{
+        .mt-2 {
             margin-top: 0.5rem;
         }
 
-        .mt-3{
+        .mt-3 {
             margin-top: 0.75rem;
         }
 
-        .mt-4{
+        .mt-4 {
             margin-top: 1rem;
         }
 
-        .block{
+        .block {
             display: block;
         }
 
-        .inline-block{
+        .inline-block {
             display: inline-block;
         }
 
-        .flex{
+        .flex {
             display: flex;
         }
 
-        .table{
+        .table {
             display: table;
         }
 
-        .grid{
+        .grid {
             display: grid;
         }
 
-        .hidden{
+        .hidden {
             display: none;
         }
 
-        .h-2{
+        .h-2 {
             height: 0.5rem;
         }
 
-        .h-4{
+        .h-4 {
             height: 1rem;
         }
 
-        .h-6{
+        .h-6 {
             height: 1.5rem;
         }
 
-        .h-8{
+        .h-8 {
             height: 2rem;
         }
 
-        .h-full{
+        .h-full {
             height: 100%;
         }
 
-        .max-h-64{
+        .max-h-64 {
             max-height: 16rem;
         }
 
-        .min-h-screen{
+        .min-h-screen {
             min-height: 100vh;
         }
 
-        .w-2{
+        .w-2 {
             width: 0.5rem;
         }
 
-        .w-6{
+        .w-6 {
             width: 1.5rem;
         }
 
-        .w-64{
+        .w-64 {
             width: 16rem;
         }
 
-        .w-8{
+        .w-8 {
             width: 2rem;
         }
 
-        .w-full{
+        .w-full {
             width: 100%;
         }
 
-        .min-w-\[460px\]{
+        .min-w-\[460px\] {
             min-width: 460px;
         }
 
-        .min-w-\[540px\]{
+        .min-w-\[540px\] {
             min-width: 540px;
         }
 
-        .max-w-\[140px\]{
+        .max-w-\[140px\] {
             max-width: 140px;
         }
 
-        .max-w-xs{
+        .max-w-xs {
             max-width: 20rem;
         }
 
-        .-translate-x-full{
+        .-translate-x-full {
             --tw-translate-x: -100%;
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
-        .-translate-y-1\/2{
+        .-translate-y-1\/2 {
             --tw-translate-y: -50%;
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
-        .appearance-none{
+        .appearance-none {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
         }
 
-        .grid-cols-1{
+        .grid-cols-1 {
             grid-template-columns: repeat(1, minmax(0, 1fr));
         }
 
-        .items-start{
+        .items-start {
             align-items: flex-start;
         }
 
-        .items-center{
+        .items-center {
             align-items: center;
         }
 
-        .justify-center{
+        .justify-center {
             justify-content: center;
         }
 
-        .justify-between{
+        .justify-between {
             justify-content: space-between;
         }
 
-        .gap-4{
+        .gap-4 {
             gap: 1rem;
         }
 
-        .gap-6{
+        .gap-6 {
             gap: 1.5rem;
         }
 
-        .overflow-x-auto{
+        .overflow-x-auto {
             overflow-x: auto;
         }
 
-        .overflow-y-auto{
+        .overflow-y-auto {
             overflow-y: auto;
         }
 
-        .truncate{
+        .truncate {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
-        .rounded{
+        .rounded {
             border-radius: 0.25rem;
         }
 
-        .rounded-full{
+        .rounded-full {
             border-radius: 9999px;
         }
 
-        .rounded-md{
+        .rounded-md {
             border-radius: 0.375rem;
         }
 
-        .rounded-bl-md{
+        .rounded-bl-md {
             border-bottom-left-radius: 0.375rem;
         }
 
-        .rounded-br-md{
+        .rounded-br-md {
             border-bottom-right-radius: 0.375rem;
         }
 
-        .rounded-tl-md{
+        .rounded-tl-md {
             border-top-left-radius: 0.375rem;
         }
 
-        .rounded-tr-md{
+        .rounded-tr-md {
             border-top-right-radius: 0.375rem;
         }
 
-        .border{
+        .border {
             border-width: 1px;
         }
 
-        .border-b{
+        .border-b {
             border-bottom-width: 1px;
         }
 
-        .border-b-2{
+        .border-b-2 {
             border-bottom-width: 2px;
         }
 
-        .border-dashed{
+        .border-dashed {
             border-style: dashed;
         }
 
-        .border-gray-100{
+        .border-gray-100 {
             --tw-border-opacity: 1;
             border-color: rgb(243 244 246 / var(--tw-border-opacity));
         }
 
-        .border-gray-200{
+        .border-gray-200 {
             --tw-border-opacity: 1;
             border-color: rgb(229 231 235 / var(--tw-border-opacity));
         }
 
-        .border-b-gray-100{
+        .border-b-gray-100 {
             --tw-border-opacity: 1;
             border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
         }
 
-        .border-b-gray-50{
+        .border-b-gray-50 {
             --tw-border-opacity: 1;
             border-bottom-color: rgb(249 250 251 / var(--tw-border-opacity));
         }
 
-        .border-b-gray-800{
+        .border-b-gray-800 {
             --tw-border-opacity: 1;
             border-bottom-color: rgb(31 41 55 / var(--tw-border-opacity));
         }
 
-        .border-b-transparent{
+        .border-b-transparent {
             border-bottom-color: transparent;
         }
 
-        .bg-black\/50{
+        .bg-black\/50 {
             background-color: rgb(0 0 0 / 0.5);
         }
 
-        .bg-blue-500{
+        .bg-blue-500 {
             --tw-bg-opacity: 1;
             background-color: rgb(59 130 246 / var(--tw-bg-opacity));
         }
 
-        .bg-blue-500\/10{
+        .bg-blue-500\/10 {
             background-color: rgb(59 130 246 / 0.1);
         }
 
-        .bg-emerald-500\/10{
+        .bg-emerald-500\/10 {
             background-color: rgb(16 185 129 / 0.1);
         }
 
-        .bg-gray-100{
+        .bg-gray-100 {
             --tw-bg-opacity: 1;
             background-color: rgb(243 244 246 / var(--tw-bg-opacity));
         }
 
-        .bg-gray-50{
+        .bg-gray-50 {
             --tw-bg-opacity: 1;
             background-color: rgb(249 250 251 / var(--tw-bg-opacity));
         }
 
-        .bg-gray-900{
+        .bg-gray-900 {
             --tw-bg-opacity: 1;
             background-color: rgb(17 24 39 / var(--tw-bg-opacity));
         }
 
-        .bg-rose-500\/10{
+        .bg-rose-500\/10 {
             background-color: rgb(244 63 94 / 0.1);
         }
 
-        .bg-white{
+        .bg-white {
             --tw-bg-opacity: 1;
             background-color: rgb(255 255 255 / var(--tw-bg-opacity));
         }
 
-        .bg-select-arrow{
+        .bg-select-arrow {
             background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTExLjk5OTcgMTMuMTcxNEwxNi45NDk1IDguMjIxNjhMMTguMzYzNyA5LjYzNTg5TDExLjk5OTcgMTUuOTk5OUw1LjYzNTc0IDkuNjM1ODlMNy4wNDk5NiA4LjIyMTY4TDExLjk5OTcgMTMuMTcxNFoiIGZpbGw9InJnYmEoMTU2LDE2MywxNzUsMSkiPjwvcGF0aD48L3N2Zz4=");
         }
 
-        .bg-\[length\:16px_16px\]{
+        .bg-\[length\:16px_16px\] {
             background-size: 16px 16px;
         }
 
-        .bg-\[right_16px_center\]{
+        .bg-\[right_16px_center\] {
             background-position: right 16px center;
         }
 
-        .bg-no-repeat{
+        .bg-no-repeat {
             background-repeat: no-repeat;
         }
 
-        .object-cover{
+        .object-cover {
             -o-object-fit: cover;
             object-fit: cover;
         }
 
-        .p-1{
+        .p-1 {
             padding: 0.25rem;
         }
 
-        .p-4{
+        .p-4 {
             padding: 1rem;
         }
 
-        .p-6{
+        .p-6 {
             padding: 1.5rem;
         }
 
-        .px-4{
+        .px-4 {
             padding-left: 1rem;
             padding-right: 1rem;
         }
 
-        .px-6{
+        .px-6 {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
 
-        .py-1{
+        .py-1 {
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
         }
 
-        .py-1\.5{
+        .py-1\.5 {
             padding-top: 0.375rem;
             padding-bottom: 0.375rem;
         }
 
-        .py-2{
+        .py-2 {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
         }
 
-        .pb-1{
+        .pb-1 {
             padding-bottom: 0.25rem;
         }
 
-        .pb-4{
+        .pb-4 {
             padding-bottom: 1rem;
         }
 
-        .pl-10{
+        .pl-10 {
             padding-left: 2.5rem;
         }
 
-        .pl-4{
+        .pl-4 {
             padding-left: 1rem;
         }
 
-        .pl-7{
+        .pl-7 {
             padding-left: 1.75rem;
         }
 
-        .pr-10{
+        .pr-10 {
             padding-right: 2.5rem;
         }
 
-        .pr-4{
+        .pr-4 {
             padding-right: 1rem;
         }
 
-        .pt-4{
+        .pt-4 {
             padding-top: 1rem;
         }
 
-        .text-left{
+        .text-left {
             text-align: left;
         }
 
-        .align-top{
+        .align-top {
             vertical-align: top;
         }
 
-        .align-middle{
+        .align-middle {
             vertical-align: middle;
         }
 
-        .font-inter{
+        .font-inter {
             font-family: 'Inter', sans-serif;
         }
 
-        .text-2xl{
+        .text-2xl {
             font-size: 1.5rem;
             line-height: 2rem;
         }
 
-        .text-\[11px\]{
+        .text-\[11px\] {
             font-size: 11px;
         }
 
-        .text-\[12px\]{
+        .text-\[12px\] {
             font-size: 12px;
         }
 
-        .text-\[13px\]{
+        .text-\[13px\] {
             font-size: 13px;
         }
 
-        .text-base{
+        .text-base {
             font-size: 1rem;
             line-height: 1.5rem;
         }
 
-        .text-lg{
+        .text-lg {
             font-size: 1.125rem;
             line-height: 1.75rem;
         }
 
-        .text-sm{
+        .text-sm {
             font-size: 0.875rem;
             line-height: 1.25rem;
         }
 
-        .text-xl{
+        .text-xl {
             font-size: 1.25rem;
             line-height: 1.75rem;
         }
 
-        .font-bold{
+        .font-bold {
             font-weight: 700;
         }
 
-        .font-medium{
+        .font-medium {
             font-weight: 500;
         }
 
-        .font-normal{
+        .font-normal {
             font-weight: 400;
         }
 
-        .font-semibold{
+        .font-semibold {
             font-weight: 600;
         }
 
-        .uppercase{
+        .uppercase {
             text-transform: uppercase;
         }
 
-        .leading-none{
+        .leading-none {
             line-height: 1;
         }
 
-        .tracking-wide{
+        .tracking-wide {
             letter-spacing: 0.025em;
         }
 
-        .text-blue-500{
+        .text-blue-500 {
             --tw-text-opacity: 1;
             color: rgb(59 130 246 / var(--tw-text-opacity));
         }
 
-        .text-emerald-500{
+        .text-emerald-500 {
             --tw-text-opacity: 1;
             color: rgb(16 185 129 / var(--tw-text-opacity));
         }
 
-        .text-gray-300{
+        .text-gray-300 {
             --tw-text-opacity: 1;
             color: rgb(209 213 219 / var(--tw-text-opacity));
         }
 
-        .text-gray-400{
+        .text-gray-400 {
             --tw-text-opacity: 1;
             color: rgb(156 163 175 / var(--tw-text-opacity));
         }
 
-        .text-gray-600{
+        .text-gray-600 {
             --tw-text-opacity: 1;
             color: rgb(75 85 99 / var(--tw-text-opacity));
         }
 
-        .text-gray-800{
+        .text-gray-800 {
             --tw-text-opacity: 1;
             color: rgb(31 41 55 / var(--tw-text-opacity));
         }
 
-        .text-rose-500{
+        .text-rose-500 {
             --tw-text-opacity: 1;
             color: rgb(244 63 94 / var(--tw-text-opacity));
         }
 
-        .text-white{
+        .text-white {
             --tw-text-opacity: 1;
             color: rgb(255 255 255 / var(--tw-text-opacity));
         }
 
-        .shadow-md{
+        .shadow-md {
             --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
         }
 
-        .shadow-black\/10{
+        .shadow-black\/10 {
             --tw-shadow-color: rgb(0 0 0 / 0.1);
             --tw-shadow: var(--tw-shadow-colored);
         }
 
-        .shadow-black\/5{
+        .shadow-black\/5 {
             --tw-shadow-color: rgb(0 0 0 / 0.05);
             --tw-shadow: var(--tw-shadow-colored);
         }
 
-        .outline-none{
+        .outline-none {
             outline: 2px solid transparent;
             outline-offset: 2px;
         }
 
-        .transition-all{
+        .transition-all {
             transition-property: all;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 150ms;
         }
 
-        .transition-transform{
+        .transition-transform {
             transition-property: transform;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 150ms;
         }
 
-        .notification-tab > .active{
+        .notification-tab>.active {
             --tw-border-opacity: 1;
             border-bottom-color: rgb(59 130 246 / var(--tw-border-opacity));
             --tw-text-opacity: 1;
             color: rgb(59 130 246 / var(--tw-text-opacity));
         }
 
-        .notification-tab > .active:hover{
+        .notification-tab>.active:hover {
             --tw-text-opacity: 1;
             color: rgb(59 130 246 / var(--tw-text-opacity));
         }
 
-        .order-tab > .active{
+        .order-tab>.active {
             --tw-bg-opacity: 1;
             background-color: rgb(59 130 246 / var(--tw-bg-opacity));
             --tw-text-opacity: 1;
             color: rgb(255 255 255 / var(--tw-text-opacity));
         }
 
-        .order-tab > .active:hover{
+        .order-tab>.active:hover {
             --tw-text-opacity: 1;
             color: rgb(255 255 255 / var(--tw-text-opacity));
         }
 
-        @media (min-width: 768px){
-            .main.active{
+        @media (min-width: 768px) {
+            .main.active {
                 margin-left: 0px;
                 width: 100%;
             }
         }
 
-        .before\:mr-3::before{
+        .before\:mr-3::before {
             content: var(--tw-content);
             margin-right: 0.75rem;
         }
 
-        .before\:h-1::before{
+        .before\:h-1::before {
             content: var(--tw-content);
             height: 0.25rem;
         }
 
-        .before\:w-1::before{
+        .before\:w-1::before {
             content: var(--tw-content);
             width: 0.25rem;
         }
 
-        .before\:rounded-full::before{
+        .before\:rounded-full::before {
             content: var(--tw-content);
             border-radius: 9999px;
         }
 
-        .before\:bg-gray-300::before{
+        .before\:bg-gray-300::before {
             content: var(--tw-content);
             --tw-bg-opacity: 1;
             background-color: rgb(209 213 219 / var(--tw-bg-opacity));
         }
 
-        .hover\:bg-gray-50:hover{
+        .hover\:bg-gray-50:hover {
             --tw-bg-opacity: 1;
             background-color: rgb(249 250 251 / var(--tw-bg-opacity));
         }
 
-        .hover\:bg-gray-950:hover{
+        .hover\:bg-gray-950:hover {
             --tw-bg-opacity: 1;
             background-color: rgb(3 7 18 / var(--tw-bg-opacity));
         }
 
-        .hover\:text-blue-500:hover{
+        .hover\:text-blue-500:hover {
             --tw-text-opacity: 1;
             color: rgb(59 130 246 / var(--tw-text-opacity));
         }
 
-        .hover\:text-blue-600:hover{
+        .hover\:text-blue-600:hover {
             --tw-text-opacity: 1;
             color: rgb(37 99 235 / var(--tw-text-opacity));
         }
 
-        .hover\:text-gray-100:hover{
+        .hover\:text-gray-100:hover {
             --tw-text-opacity: 1;
             color: rgb(243 244 246 / var(--tw-text-opacity));
         }
 
-        .hover\:text-gray-600:hover{
+        .hover\:text-gray-600:hover {
             --tw-text-opacity: 1;
             color: rgb(75 85 99 / var(--tw-text-opacity));
         }
 
-        .focus\:border-blue-500:focus{
+        .focus\:border-blue-500:focus {
             --tw-border-opacity: 1;
             border-color: rgb(59 130 246 / var(--tw-border-opacity));
         }
 
-        .group:hover .group-hover\:text-blue-500{
+        .group:hover .group-hover\:text-blue-500 {
             --tw-text-opacity: 1;
             color: rgb(59 130 246 / var(--tw-text-opacity));
         }
 
-        .group.selected .group-\[\.selected\]\:block{
+        .group.selected .group-\[\.selected\]\:block {
             display: block;
         }
 
-        .group.selected .group-\[\.selected\]\:rotate-90{
+        .group.selected .group-\[\.selected\]\:rotate-90 {
             --tw-rotate: 90deg;
             transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
         }
 
-        .group.active .group-\[\.active\]\:bg-gray-800{
+        .group.active .group-\[\.active\]\:bg-gray-800 {
             --tw-bg-opacity: 1;
             background-color: rgb(31 41 55 / var(--tw-bg-opacity));
         }
 
-        .group.selected .group-\[\.selected\]\:bg-gray-950{
+        .group.selected .group-\[\.selected\]\:bg-gray-950 {
             --tw-bg-opacity: 1;
             background-color: rgb(3 7 18 / var(--tw-bg-opacity));
         }
 
-        .group.active .group-\[\.active\]\:text-white{
+        .group.active .group-\[\.active\]\:text-white {
             --tw-text-opacity: 1;
             color: rgb(255 255 255 / var(--tw-text-opacity));
         }
 
-        .group.selected .group-\[\.selected\]\:text-gray-100{
+        .group.selected .group-\[\.selected\]\:text-gray-100 {
             --tw-text-opacity: 1;
             color: rgb(243 244 246 / var(--tw-text-opacity));
         }
 
-        @media (min-width: 768px){
-            .md\:ml-64{
+        @media (min-width: 768px) {
+            .md\:ml-64 {
                 margin-left: 16rem;
             }
 
-            .md\:hidden{
+            .md\:hidden {
                 display: none;
             }
 
-            .md\:w-\[calc\(100\%-256px\)\]{
+            .md\:w-\[calc\(100\%-256px\)\] {
                 width: calc(100% - 256px);
             }
 
-            .md\:grid-cols-2{
+            .md\:grid-cols-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
         }
 
-        @media (min-width: 1024px){
-            .lg\:col-span-2{
+        @media (min-width: 1024px) {
+            .lg\:col-span-2 {
                 grid-column: span 2 / span 2;
             }
 
-            .lg\:grid-cols-2{
+            .lg\:grid-cols-2 {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
 
-            .lg\:grid-cols-3{
+            .lg\:grid-cols-3 {
                 grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
     </style>
 </head>
+
 <body class="text-gray-800 font-inter">
-<!--sidenav -->
-<div class="fixed left-0 top-0 w-64 h-full bg-[#f8f4f3] p-4 z-50 sidebar-menu transition-transform">
-    <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
+    <!--sidenav -->
+    <div class="fixed left-0 top-0 w-64 h-full bg-[#f8f4f3] p-4 z-50 sidebar-menu transition-transform">
+        <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
 
-        <h2 class="font-bold text-2xl">LOREM <span class="bg-[#f84525] text-white px-2 rounded-md">IPSUM</span></h2>
-    </a>
-    <ul class="mt-4">
-        <span class="text-gray-400 font-bold">ADMIN</span>
-        <li class="mb-1 group">
-            <a href="{{ route('dash') }}" class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
-                <i class="ri-home-2-line mr-3 text-lg"></i>
-                <span class="text-sm">Dashboard</span>
-            </a>
-        </li>
-        <li class="mb-1 group">
-            <a href="" class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
-                <i class='bx bx-user mr-3 text-lg'></i>
-                <span class="text-sm">Users</span>
-                <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
-            </a>
-            <ul class="pl-7 mt-2 hidden group-[.selected]:block">
-                <li class="mb-4">
-                    <a href="" class="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">All</a>
-                </li>
-                <li class="mb-4">
-                    <a href="" class="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Roles</a>
-                </li>
-            </ul>
-        </li>
-        <li class="mb-1 group">
-            <a href="{{ route('get.event') }}" class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
-                <i class='bx bx-list-ul mr-3 text-lg'></i>
-                <span class="text-sm">Event</span>
-            </a>
-        </li>
-        <li class="mb-1 group">
-            <a href="{{ route('get.category') }}" class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
-                <i class='bx bx-list-ul mr-3 text-lg'></i>
-                <span class="text-sm">Category</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
-<!-- end sidenav -->
-
-<main x-data="{ isModalOpen: false }" class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-200 min-h-screen transition-all main">
-    <!-- navbar -->
-    <div class="py-2 px-6 bg-[#f8f4f3] flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
-        <button type="button" class="text-lg text-gray-900 font-semibold sidebar-toggle">
-            <i class="ri-menu-line"></i>
-        </button>
-
-        <ul class="ml-auto flex items-center">Blo
-            <li class="mr-1 dropdown">
-                <div class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
-                    <form action="" class="p-4 border-b border-b-gray-100">
-                        <div class="relative w-full">
-                            <input type="text" class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500" placeholder="Search...">
-                            <i class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-900"></i>
-                        </div>
-                    </form>
-                </div>
+            <h2 class="font-bold text-2xl">LOREM <span class="bg-[#f84525] text-white px-2 rounded-md">IPSUM</span></h2>
+        </a>
+        <ul class="mt-4">
+            <span class="text-gray-400 font-bold">ADMIN</span>
+            <li class="mb-1 group">
+                <a href="{{ route('dash') }}"
+                    class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                    <i class="ri-home-2-line mr-3 text-lg"></i>
+                    <span class="text-sm">Dashboard</span>
+                </a>
             </li>
-            <li class="dropdown">
-                <div class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
-                    <div class="flex items-center px-4 pt-4 border-b border-b-gray-100 notification-tab">
-                        <button type="button" data-tab="notification" data-tab-page="notifications" class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1 active">Notifications</button>
-                        <button type="button" data-tab="notification" data-tab-page="messages" class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1">Messages</button>
-                    </div>
-                    <div class="my-2">
-                        <ul class="max-h-64 overflow-y-auto" data-tab-for="notification" data-page="notifications">
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order</div>
-                                        <div class="text-[11px] text-gray-400">from a user</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order</div>
-                                        <div class="text-[11px] text-gray-400">from a user</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order</div>
-                                        <div class="text-[11px] text-gray-400">from a user</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order</div>
-                                        <div class="text-[11px] text-gray-400">from a user</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">New order</div>
-                                        <div class="text-[11px] text-gray-400">from a user</div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="max-h-64 overflow-y-auto hidden" data-tab-for="notification" data-page="messages">
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe</div>
-                                        <div class="text-[11px] text-gray-400">Hello there!</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe</div>
-                                        <div class="text-[11px] text-gray-400">Hello there!</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe</div>
-                                        <div class="text-[11px] text-gray-400">Hello there!</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe</div>
-                                        <div class="text-[11px] text-gray-400">Hello there!</div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
-                                    <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded block object-cover align-middle">
-                                    <div class="ml-2">
-                                        <div class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">John Doe</div>
-                                        <div class="text-[11px] text-gray-400">Hello there!</div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <script>
-                const fullscreenButton = document.getElementById('fullscreen-button');
-
-                fullscreenButton.addEventListener('click', toggleFullscreen);
-
-                function toggleFullscreen() {
-                    if (document.fullscreenElement) {
-                        // If already in fullscreen, exit fullscreen
-                        document.exitFullscreen();
-                    } else {
-                        // If not in fullscreen, request fullscreen
-                        document.documentElement.requestFullscreen();
-                    }
-                }
-            </script>
-
-            <li class="dropdown ml-3">
-                <button type="button" class="dropdown-toggle flex items-center">
-                    <div class="flex-shrink-0 w-10 h-10 relative">
-                        <div class="p-1 bg-white rounded-full focus:outline-none focus:ring">
-                            <img class="w-8 h-8 rounded-full" src="https://laravelui.spruko.com/tailwind/ynex/build/assets/images/faces/9.jpg" alt=""/>
-                            <div class="top-0 left-7 absolute w-3 h-3 bg-lime-400 border-2 border-white rounded-full animate-ping"></div>
-                            <div class="top-0 left-7 absolute w-3 h-3 bg-lime-500 border-2 border-white rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="p-2 md:block text-left">
-                        <h2 class="text-sm font-semibold text-gray-800">John Doe</h2>
-                        <p class="text-xs text-gray-500">Administrator</p>
-                    </div>
-                </button>
-                <ul class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
-                    <li>
-                        <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50">Profile</a>
+            <li class="mb-1 group">
+                <a href=""
+                    class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100 sidebar-dropdown-toggle">
+                    <i class='bx bx-user mr-3 text-lg'></i>
+                    <span class="text-sm">Users</span>
+                    <i class="ri-arrow-right-s-line ml-auto group-[.selected]:rotate-90"></i>
+                </a>
+                <ul class="pl-7 mt-2 hidden group-[.selected]:block">
+                    <li class="mb-4">
+                        <a href=""
+                            class="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">All</a>
                     </li>
-                    <li>
-                        <a href="#" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50">Settings</a>
-                    </li>
-                    <li>
-                        <form method="POST" action="">
-                            <a role="menuitem" class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50 cursor-pointer"
-                               onclick="event.preventDefault();
-                                    this.closest('form').submit();">
-                                Log Out
-                            </a>
-                        </form>
+                    <li class="mb-4">
+                        <a href=""
+                            class="text-gray-900 text-sm flex items-center hover:text-[#f84525] before:contents-[''] before:w-1 before:h-1 before:rounded-full before:bg-gray-300 before:mr-3">Roles</a>
                     </li>
                 </ul>
             </li>
+            <li class="mb-1 group">
+                <a href="{{ route('get.event') }}"
+                    class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                    <i class='bx bx-list-ul mr-3 text-lg'></i>
+                    <span class="text-sm">Event</span>
+                </a>
+            </li>
+            <li class="mb-1 group">
+                <a href="{{ route('get.category') }}"
+                    class="flex font-semibold items-center py-2 px-4 text-gray-900 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                    <i class='bx bx-list-ul mr-3 text-lg'></i>
+                    <span class="text-sm">Category</span>
+                </a>
+            </li>
         </ul>
     </div>
-    <!-- end navbar -->
+    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <!-- end sidenav -->
 
-    <!-- Event List Table -->
-    <div class="container mx-auto">
-        <h1 class="text-4xl font-bold p-8 mb-8 text-stroke text-blue">List Event</h1>
+    <main x-data="{ isModalOpen: false }"
+        class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-200 min-h-screen transition-all main">
+        <!-- navbar -->
+        <div class="py-2 px-6 bg-[#f8f4f3] flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
+            <button type="button" class="text-lg text-gray-900 font-semibold sidebar-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <ul class="ml-auto flex items-center">Blo
+                <li class="mr-1 dropdown">
+                    <div
+                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
+                        <form action="" class="p-4 border-b border-b-gray-100">
+                            <div class="relative w-full">
+                                <input type="text"
+                                    class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500"
+                                    placeholder="Search...">
+                                <i class="ri-search-line absolute top-1/2 left-4 -translate-y-1/2 text-gray-900"></i>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <div
+                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden max-w-xs w-full bg-white rounded-md border border-gray-100">
+                        <div class="flex items-center px-4 pt-4 border-b border-b-gray-100 notification-tab">
+                            <button type="button" data-tab="notification" data-tab-page="notifications"
+                                class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1 active">Notifications</button>
+                            <button type="button" data-tab="notification" data-tab-page="messages"
+                                class="text-gray-400 font-medium text-[13px] hover:text-gray-600 border-b-2 border-b-transparent mr-4 pb-1">Messages</button>
+                        </div>
+                        <div class="my-2">
+                            <ul class="max-h-64 overflow-y-auto" data-tab-for="notification" data-page="notifications">
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                New order</div>
+                                            <div class="text-[11px] text-gray-400">from a user</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                New order</div>
+                                            <div class="text-[11px] text-gray-400">from a user</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                New order</div>
+                                            <div class="text-[11px] text-gray-400">from a user</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                New order</div>
+                                            <div class="text-[11px] text-gray-400">from a user</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                New order</div>
+                                            <div class="text-[11px] text-gray-400">from a user</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="max-h-64 overflow-y-auto hidden" data-tab-for="notification"
+                                data-page="messages">
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                John Doe</div>
+                                            <div class="text-[11px] text-gray-400">Hello there!</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                John Doe</div>
+                                            <div class="text-[11px] text-gray-400">Hello there!</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                John Doe</div>
+                                            <div class="text-[11px] text-gray-400">Hello there!</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                John Doe</div>
+                                            <div class="text-[11px] text-gray-400">Hello there!</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="py-2 px-4 flex items-center hover:bg-gray-50 group">
+                                        <img src="https://placehold.co/32x32" alt=""
+                                            class="w-8 h-8 rounded block object-cover align-middle">
+                                        <div class="ml-2">
+                                            <div
+                                                class="text-[13px] text-gray-600 font-medium truncate group-hover:text-blue-500">
+                                                John Doe</div>
+                                            <div class="text-[11px] text-gray-400">Hello there!</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <script>
+                    const fullscreenButton = document.getElementById('fullscreen-button');
+
+                    fullscreenButton.addEventListener('click', toggleFullscreen);
+
+                    function toggleFullscreen() {
+                        if (document.fullscreenElement) {
+                            // If already in fullscreen, exit fullscreen
+                            document.exitFullscreen();
+                        } else {
+                            // If not in fullscreen, request fullscreen
+                            document.documentElement.requestFullscreen();
+                        }
+                    }
+                </script>
+
+                <li class="dropdown ml-3">
+                    <button type="button" class="dropdown-toggle flex items-center">
+                        <div class="flex-shrink-0 w-10 h-10 relative">
+                            <div class="p-1 bg-white rounded-full focus:outline-none focus:ring">
+                                <img class="w-8 h-8 rounded-full"
+                                    src="https://laravelui.spruko.com/tailwind/ynex/build/assets/images/faces/9.jpg"
+                                    alt="" />
+                                <div
+                                    class="top-0 left-7 absolute w-3 h-3 bg-lime-400 border-2 border-white rounded-full animate-ping">
+                                </div>
+                                <div
+                                    class="top-0 left-7 absolute w-3 h-3 bg-lime-500 border-2 border-white rounded-full">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2 md:block text-left">
+                            <h2 class="text-sm font-semibold text-gray-800">John Doe</h2>
+                            <p class="text-xs text-gray-500">Administrator</p>
+                        </div>
+                    </button>
+                    <ul
+                        class="dropdown-menu shadow-md shadow-black/5 z-30 hidden py-1.5 rounded-md bg-white border border-gray-100 w-full max-w-[140px]">
+                        <li>
+                            <a href="#"
+                                class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50">Settings</a>
+                        </li>
+                        <li>
+                            <form method="POST" action="">
+                                <a role="menuitem"
+                                    class="flex items-center text-[13px] py-1.5 px-4 text-gray-600 hover:text-[#f84525] hover:bg-gray-50 cursor-pointer"
+                                    onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                    Log Out
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- end navbar -->
+
+        <!-- Event List Table -->
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold p-8 mb-8 text-stroke text-blue">List Event</h1>
+        </div>
+        <div class="max-w-3xl mt-48 mx-auto bg-white p-6 mt-4 rounded-lg shadow-md">
+            <h1 class="text-2xl font-semibold mb-4">Event List</h1>
+
+            <!-- Table starts here -->
+            <table class="min-w-full border border-gray-300">
+                <thead>
+                    <tr>
+                        <th class="border-b p-2">Name</th>
+                        <th class="border-b p-2">Date</th>
+                        <th class="border-b p-2">Category</th>
+                        <th class="border-b p-2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Data -->
+                    <tr>
+                        <td class="border-b p-2">Event 1</td>
+                        <td class="border-b p-2">2024-03-02</td>
+                        <td class="border-b p-2">Category A</td>
+                        <td class="border-b p-2">
+                            <!-- Add action buttons here -->
+                            <button type="button"
+                                class="px-6 py-2 rounded-full text-black text-sm tracking-wider font-medium outline-none border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all duration-300">Status</button>
+                        </td>
+                    </tr>
+                    <!-- End Sample Data -->
+                </tbody>
+            </table>
+            <!-- Table ends here -->
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     </div>
-    <div class="max-w-3xl mt-48 mx-auto bg-white p-6 mt-4 rounded-lg shadow-md">
-        <h1 class="text-2xl font-semibold mb-4">Event List</h1>
 
-        <!-- Table starts here -->
-        <table class="min-w-full border border-gray-300">
-            <thead>
-            <tr>
-                <th class="border-b p-2">Name</th>
-                <th class="border-b p-2">Date</th>
-                <th class="border-b p-2">Category</th>
-                <th class="border-b p-2">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- Sample Data -->
-            <tr>
-                <td class="border-b p-2">Event 1</td>
-                <td class="border-b p-2">2024-03-02</td>
-                <td class="border-b p-2">Category A</td>
-                <td class="border-b p-2">
-                    <!-- Add action buttons here -->
-                    <button type="button"
-                            class="px-6 py-2 rounded-full text-black text-sm tracking-wider font-medium outline-none border-2 border-green-600 hover:bg-green-600 hover:text-white transition-all duration-300">Status</button>
-                </td>
-            </tr>
-            <!-- End Sample Data -->
-            </tbody>
-        </table>
-        <!-- Table ends here -->
-    </div>
-
-</main>
-
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-</div>
-
-<script>
-    // start: Sidebar
-    const sidebarToggle = document.querySelector('.sidebar-toggle')
-    const sidebarOverlay = document.querySelector('.sidebar-overlay')
-    const sidebarMenu = document.querySelector('.sidebar-menu')
-    const main = document.querySelector('.main')
-    sidebarToggle.addEventListener('click', function (e) {
-        e.preventDefault()
-        main.classList.toggle('active')
-        sidebarOverlay.classList.toggle('hidden')
-        sidebarMenu.classList.toggle('-translate-x-full')
-    })
-    sidebarOverlay.addEventListener('click', function (e) {
-        e.preventDefault()
-        main.classList.add('active')
-        sidebarOverlay.classList.add('hidden')
-        sidebarMenu.classList.add('-translate-x-full')
-    })
-    document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function (item) {
-        item.addEventListener('click', function (e) {
+    <script>
+        // start: Sidebar
+        const sidebarToggle = document.querySelector('.sidebar-toggle')
+        const sidebarOverlay = document.querySelector('.sidebar-overlay')
+        const sidebarMenu = document.querySelector('.sidebar-menu')
+        const main = document.querySelector('.main')
+        sidebarToggle.addEventListener('click', function(e) {
             e.preventDefault()
-            const parent = item.closest('.group')
-            if (parent.classList.contains('selected')) {
-                parent.classList.remove('selected')
-            } else {
-                document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function (i) {
-                    i.closest('.group').classList.remove('selected')
-                })
-                parent.classList.add('selected')
-            }
+            main.classList.toggle('active')
+            sidebarOverlay.classList.toggle('hidden')
+            sidebarMenu.classList.toggle('-translate-x-full')
         })
-    })
-    // end: Sidebar
+        sidebarOverlay.addEventListener('click', function(e) {
+            e.preventDefault()
+            main.classList.add('active')
+            sidebarOverlay.classList.add('hidden')
+            sidebarMenu.classList.add('-translate-x-full')
+        })
+        document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                e.preventDefault()
+                const parent = item.closest('.group')
+                if (parent.classList.contains('selected')) {
+                    parent.classList.remove('selected')
+                } else {
+                    document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function(i) {
+                        i.closest('.group').classList.remove('selected')
+                    })
+                    parent.classList.add('selected')
+                }
+            })
+        })
+        // end: Sidebar
 
 
 
-    // start: Popper
-    const popperInstance = {}
-    document.querySelectorAll('.dropdown').forEach(function (item, index) {
-        const popperId = 'popper-' + index
-        const toggle = item.querySelector('.dropdown-toggle')
-        const menu = item.querySelector('.dropdown-menu')
-        menu.dataset.popperId = popperId
-        popperInstance[popperId] = Popper.createPopper(toggle, menu, {
-            modifiers: [
-                {
-                    name: 'offset',
-                    options: {
-                        offset: [0, 8],
+        // start: Popper
+        const popperInstance = {}
+        document.querySelectorAll('.dropdown').forEach(function(item, index) {
+            const popperId = 'popper-' + index
+            const toggle = item.querySelector('.dropdown-toggle')
+            const menu = item.querySelector('.dropdown-menu')
+            menu.dataset.popperId = popperId
+            popperInstance[popperId] = Popper.createPopper(toggle, menu, {
+                modifiers: [{
+                        name: 'offset',
+                        options: {
+                            offset: [0, 8],
+                        },
                     },
-                },
-                {
-                    name: 'preventOverflow',
-                    options: {
-                        padding: 24,
+                    {
+                        name: 'preventOverflow',
+                        options: {
+                            padding: 24,
+                        },
                     },
-                },
-            ],
-            placement: 'bottom-end'
-        });
-    })
-    document.addEventListener('click', function (e) {
-        const toggle = e.target.closest('.dropdown-toggle')
-        const menu = e.target.closest('.dropdown-menu')
-        if (toggle) {
-            const menuEl = toggle.closest('.dropdown').querySelector('.dropdown-menu')
-            const popperId = menuEl.dataset.popperId
-            if (menuEl.classList.contains('hidden')) {
+                ],
+                placement: 'bottom-end'
+            });
+        })
+        document.addEventListener('click', function(e) {
+            const toggle = e.target.closest('.dropdown-toggle')
+            const menu = e.target.closest('.dropdown-menu')
+            if (toggle) {
+                const menuEl = toggle.closest('.dropdown').querySelector('.dropdown-menu')
+                const popperId = menuEl.dataset.popperId
+                if (menuEl.classList.contains('hidden')) {
+                    hideDropdown()
+                    menuEl.classList.remove('hidden')
+                    showPopper(popperId)
+                } else {
+                    menuEl.classList.add('hidden')
+                    hidePopper(popperId)
+                }
+            } else if (!menu) {
                 hideDropdown()
-                menuEl.classList.remove('hidden')
-                showPopper(popperId)
-            } else {
-                menuEl.classList.add('hidden')
-                hidePopper(popperId)
             }
-        } else if (!menu) {
-            hideDropdown()
+        })
+
+        function hideDropdown() {
+            document.querySelectorAll('.dropdown-menu').forEach(function(item) {
+                item.classList.add('hidden')
+            })
         }
-    })
 
-    function hideDropdown() {
-        document.querySelectorAll('.dropdown-menu').forEach(function (item) {
-            item.classList.add('hidden')
-        })
-    }
-    function showPopper(popperId) {
-        popperInstance[popperId].setOptions(function (options) {
-            return {
-                ...options,
-                modifiers: [
-                    ...options.modifiers,
-                    { name: 'eventListeners', enabled: true },
-                ],
-            }
-        });
-        popperInstance[popperId].update();
-    }
-    function hidePopper(popperId) {
-        popperInstance[popperId].setOptions(function (options) {
-            return {
-                ...options,
-                modifiers: [
-                    ...options.modifiers,
-                    { name: 'eventListeners', enabled: false },
-                ],
-            }
-        });
-    }
-    // end: Popper
+        function showPopper(popperId) {
+            popperInstance[popperId].setOptions(function(options) {
+                return {
+                    ...options,
+                    modifiers: [
+                        ...options.modifiers,
+                        {
+                            name: 'eventListeners',
+                            enabled: true
+                        },
+                    ],
+                }
+            });
+            popperInstance[popperId].update();
+        }
+
+        function hidePopper(popperId) {
+            popperInstance[popperId].setOptions(function(options) {
+                return {
+                    ...options,
+                    modifiers: [
+                        ...options.modifiers,
+                        {
+                            name: 'eventListeners',
+                            enabled: false
+                        },
+                    ],
+                }
+            });
+        }
+        // end: Popper
 
 
 
-    // start: Tab
-    document.querySelectorAll('[data-tab]').forEach(function (item) {
-        item.addEventListener('click', function (e) {
-            e.preventDefault()
-            const tab = item.dataset.tab
-            const page = item.dataset.tabPage
-            const target = document.querySelector('[data-tab-for="' + tab + '"][data-page="' + page + '"]')
-            document.querySelectorAll('[data-tab="' + tab + '"]').forEach(function (i) {
-                i.classList.remove('active')
+        // start: Tab
+        document.querySelectorAll('[data-tab]').forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                e.preventDefault()
+                const tab = item.dataset.tab
+                const page = item.dataset.tabPage
+                const target = document.querySelector('[data-tab-for="' + tab + '"][data-page="' + page +
+                    '"]')
+                document.querySelectorAll('[data-tab="' + tab + '"]').forEach(function(i) {
+                    i.classList.remove('active')
+                })
+                document.querySelectorAll('[data-tab-for="' + tab + '"]').forEach(function(i) {
+                    i.classList.add('hidden')
+                })
+                item.classList.add('active')
+                target.classList.remove('hidden')
             })
-            document.querySelectorAll('[data-tab-for="' + tab + '"]').forEach(function (i) {
-                i.classList.add('hidden')
-            })
-            item.classList.add('active')
-            target.classList.remove('hidden')
         })
-    })
-    // end: Tab
+        // end: Tab
 
 
 
-    // start: Chart
-    new Chart(document.getElementById('order-chart'), {
-        type: 'line',
-        data: {
-            labels: generateNDays(7),
-            datasets: [
-                {
-                    label: 'Active',
-                    data: generateRandomData(7),
-                    borderWidth: 1,
-                    fill: true,
-                    pointBackgroundColor: 'rgb(59, 130, 246)',
-                    borderColor: 'rgb(59, 130, 246)',
-                    backgroundColor: 'rgb(59 130 246 / .05)',
-                    tension: .2
-                },
-                {
-                    label: 'Completed',
-                    data: generateRandomData(7),
-                    borderWidth: 1,
-                    fill: true,
-                    pointBackgroundColor: 'rgb(16, 185, 129)',
-                    borderColor: 'rgb(16, 185, 129)',
-                    backgroundColor: 'rgb(16 185 129 / .05)',
-                    tension: .2
-                },
-                {
-                    label: 'Canceled',
-                    data: generateRandomData(7),
-                    borderWidth: 1,
-                    fill: true,
-                    pointBackgroundColor: 'rgb(244, 63, 94)',
-                    borderColor: 'rgb(244, 63, 94)',
-                    backgroundColor: 'rgb(244 63 94 / .05)',
-                    tension: .2
-                },
-            ]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
+        // start: Chart
+        new Chart(document.getElementById('order-chart'), {
+            type: 'line',
+            data: {
+                labels: generateNDays(7),
+                datasets: [{
+                        label: 'Active',
+                        data: generateRandomData(7),
+                        borderWidth: 1,
+                        fill: true,
+                        pointBackgroundColor: 'rgb(59, 130, 246)',
+                        borderColor: 'rgb(59, 130, 246)',
+                        backgroundColor: 'rgb(59 130 246 / .05)',
+                        tension: .2
+                    },
+                    {
+                        label: 'Completed',
+                        data: generateRandomData(7),
+                        borderWidth: 1,
+                        fill: true,
+                        pointBackgroundColor: 'rgb(16, 185, 129)',
+                        borderColor: 'rgb(16, 185, 129)',
+                        backgroundColor: 'rgb(16 185 129 / .05)',
+                        tension: .2
+                    },
+                    {
+                        label: 'Canceled',
+                        data: generateRandomData(7),
+                        borderWidth: 1,
+                        fill: true,
+                        pointBackgroundColor: 'rgb(244, 63, 94)',
+                        borderColor: 'rgb(244, 63, 94)',
+                        backgroundColor: 'rgb(244 63 94 / .05)',
+                        tension: .2
+                    },
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
             }
-        }
-    });
+        });
 
-    function generateNDays(n) {
-        const data = []
-        for(let i=0; i<n; i++) {
-            const date = new Date()
-            date.setDate(date.getDate()-i)
-            data.push(date.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric'
-            }))
+        function generateNDays(n) {
+            const data = []
+            for (let i = 0; i < n; i++) {
+                const date = new Date()
+                date.setDate(date.getDate() - i)
+                data.push(date.toLocaleString('en-US', {
+                    month: 'short',
+                    day: 'numeric'
+                }))
+            }
+            return data
         }
-        return data
-    }
-    function generateRandomData(n) {
-        const data = []
-        for(let i=0; i<n; i++) {
-            data.push(Math.round(Math.random() * 10))
+
+        function generateRandomData(n) {
+            const data = []
+            for (let i = 0; i < n; i++) {
+                data.push(Math.round(Math.random() * 10))
+            }
+            return data
         }
-        return data
-    }
-    // end: Chart
-
-
-</script>
+        // end: Chart
+    </script>
 
 </body>
-</html>
 
+</html>
