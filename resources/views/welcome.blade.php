@@ -29,7 +29,7 @@
 
         <div class="sliderAx h-auto">
             <div id="slider-1" class="container mx-auto">
-                <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+                <div class="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
                     style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
                     <div class="md:w-1/2">
                         <p class="font-bold text-sm uppercase">Services</p>
@@ -64,13 +64,13 @@
         </div>
 
 
-        <div class="w-4/6 dark:bg-gray-800 mx-auto mt-8 flex flex-wrap justify-around mt-48">
+        <div class="w-full dark:bg-gray-800 mx-auto mt-8 flex flex-wrap justify-around mt-48">
 
             @foreach ($validatedEvents as $event)
                 <div
-                    class="w-1/3 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700 mb-6 px-4">
+                    class="w-1/3 bg-gray-400 shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700 mb-6 px-4">
                     <a href="#">
-                        <img class="w-full h-96 object-cover rounded-t-lg"
+                        <img class="w-full h-96 pt-4 rounded-md	 object-cover rounded-t-lg"
                             {{--src="{{ asset('storage/') . '/' . $event->image }}" alt="{{ $event->title }}">--}}
                             src="{{ asset("storage/$event->image") }}" alt="{{ $event->title }}">
                     </a>
@@ -82,7 +82,7 @@
                             </h5>
                         </a>
                         <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">{{ $event->description }}</p>
-                        <a href="#"
+                        <a href="{{ route('events.detail', $event) }}"
                             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Read more
 
